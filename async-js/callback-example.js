@@ -23,3 +23,10 @@ func('shouldCallback', () => console.log('execute callback'));
 // };
 
 // func('shouldCallback', () => console.log('execute callback'));
+
+
+
+
+// TO DO
+// ADD info about "callback hell" and "inverted pyramid"
+
