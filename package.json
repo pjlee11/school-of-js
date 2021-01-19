@@ -1,0 +1,15 @@
+{
+  "name": "school-of-js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pjlee11/school-of-js.git"
+  },
+  "author": "pjlee11",
+  "license": "UNLICENSED",
+  "scripts": {},
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "dependencies": {}
+}
