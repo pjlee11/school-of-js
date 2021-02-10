@@ -1,0 +1,45 @@
+{
+  "name": "@school-of-js/client-side-rendering",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "build": "yarn build:clean && yarn build:client && yarn build:server",
+    "build:clean": "rimraf build && mkdir build && mkdir build/client && mkdir build/server",
+    "build:client": "webpack --config webpack.client.js",
+    "build:server": "webpack --config webpack.server.js",
+    "demo": "yarn build && yarn start",
+    "start": "node build/server/index.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.10.4",
+    "@babel/preset-react": "7.10.4",
+    "babel-loader": "8.1.0",
+    "html-webpack-plugin": "4.5.0",
+    "react-dev-utils": "^11.0.2",
+    "rimraf": "^3.0.2",
+    "webpack": "4.46.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
