@@ -15,8 +15,7 @@ const App = () => {
     .then((response) => setData(response));
   
   if (data === defaultData) {
-    // simulate a slow data fetch
-    setTimeout(fetchData, 2000);
+    setTimeout(fetchData, 2000); // simulate a slow data fetch
   }
 
   return (
