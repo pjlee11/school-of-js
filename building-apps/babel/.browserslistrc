@@ -1,0 +1,8 @@
+# List the browsers that the app supports
+
+# defaults
+# Chrome > 85
+IE 8
+
+# Chrome 85+ = Cutting edge browsers - let, const, Promise, Symbol, arrow functions and destructuring do not need transpiling
+#  defaults = Relatively modern browsers - arrow functions and destructuring needs to be transpiled

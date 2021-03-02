@@ -1,0 +1,23 @@
+{
+  "name": "@school-of-js/babel",
+  "version": "1.0.0",
+  "description": "This packages demonstrates the purpose of babel and is purely for educational purposes",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel index.js"
+  },
+  "author": "pjlee11",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.13.0",
+    "@babel/plugin-transform-destructuring": "^7.13.0",
+    "@babel/plugin-transform-instanceof": "^7.12.13",
+    "@babel/plugin-transform-spread": "^7.13.0",
+    "@babel/preset-env": "^7.13.8",
+    "browserslist": "^4.16.3"
+  }
+}
