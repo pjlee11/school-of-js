@@ -8,7 +8,7 @@
     "react-dom": "^17.0.1"
   },
   "scripts": {
-    "build": "yarn build:clean && yarn build:client && yarn build:server",
+    "build": "yarn build:clean && NODE_ENV=production yarn build:client && NODE_ENV=production yarn build:server",
     "build:clean": "rimraf build && mkdir build && mkdir build/client && mkdir build/server",
     "build:client": "webpack --config webpack.client.js",
     "build:server": "webpack --config webpack.server.js",
@@ -20,23 +20,17 @@
       "react-app"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    "defaults",
+    "IE 11"
+  ],
   "devDependencies": {
     "@babel/core": "7.10.4",
     "@babel/preset-react": "7.10.4",
+    "@babel/preset-env": "7.13.9",
     "babel-loader": "8.1.0",
     "html-webpack-plugin": "4.5.0",
+    "optimize-plugin": "^3.2.0",
     "react-dev-utils": "^11.0.2",
     "rimraf": "^3.0.2",
     "webpack": "4.46.0",
