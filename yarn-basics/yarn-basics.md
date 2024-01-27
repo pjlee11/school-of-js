@@ -16,3 +16,6 @@ Add a package to the `devDependencies`:
 See why a package is installed (including which versions) in node_modules/:
 `yarn why ${PACKAGE_NAME}`
 
+### Further reading 
+
+[Yarn cheatsheet](https://karloespiritu.github.io/cheatsheets/yarn/)
