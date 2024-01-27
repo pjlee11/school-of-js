@@ -27,12 +27,16 @@ Given the data needs to be fetched on the client, for performance best practice,
 
 ## Universal rendering
 
+...
 
 ### Server only data fetching
 
+...
 
 ### Server and client data fetching
 
+...
 
 ## Single page applications
 
+...
