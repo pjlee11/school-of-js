@@ -12,7 +12,7 @@ const Menu = () => {
       const resp = await fetch('https://api.sampleapis.com/coffee/hot');
       const json = await resp.json();
       setData(json);
-      setTimeout(() => setLoading(false), 1000);
+      setTimeout(() => setLoading(false), 1000); // mimic loading
     }
 
     getData();

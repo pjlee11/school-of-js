@@ -17,8 +17,8 @@ const MenuItems = ({ data }) => {
                 <h2>{item.title}</h2>
                 <img src={item.image} aria-hidden={true} alt='' />
               </div>
-              </Link >
-            </li>
+            </Link >
+          </li>
         );
       })}
     </div>
