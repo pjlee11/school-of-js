@@ -23,7 +23,7 @@ const DrinkPage = () => {
 
   return (
     <>
-      <h2>{data.title}</h2>
+      <h2 data-testid={`drink-${data.id}`}>{data.title}</h2>
       <img src={data.image} aria-hidden={true} alt='' />
       <p>Ingredients: {data.ingredients.join(', ')}</p>
       <br/>
